@@ -1,0 +1,135 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--    <head>-->
+<!--        <link rel="stylesheet" href="main_css.css">-->
+<!--        <meta charset="UTF-8"/>-->
+<!--        <title>Email List</title>-->
+<!--            </head>-->
+<!--                <body>-->
+<!--                <h2>Register Email</h2>-->
+<!--                <label for="name">Name</label>-->
+<!--                <input id="name" type="text" placeholder="Your name">-->
+<!--                <label for="email">Email</label>-->
+<!--                <input id="email" type="email" placeholder="example@mail.com">-->
+<!--                <label for="phone">Phone</label>-->
+<!--                <input id="phone" type="text" placeholder="+359...">-->
+<!--                <button id="submit">Send</button>-->
+<!--                <div id="response"></div>-->
+<!--                <script>-->
+<!--                // Replace this with your actual API Gateway invoke URL-->
+<!--                const apiUrl = "https://iw650z8cg0.execute-api.eu-north-1.amazonaws.com/prod";-->
+<!--                const responseBox = document.getElementById("response");-->
+<!--                document.getElementById("submit").addEventListener("click", async () => {-->
+<!--                const name = document.getElementById("name").value.trim();-->
+<!--                const phone = document.getElementById("phone").value.trim();-->
+<!--                const email = document.getElementById("email").value.trim();-->
+<!--                if (!name || !phone || !email) {-->
+<!--                    alert("Please enter name, email and phone.");-->
+<!--                    return;-->
+<!--                }-->
+<!--                const payload = {-->
+<!--                name: name,-->
+<!--                phone: phone,-->
+<!--                email: email-->
+<!--                };-->
+<!--                responseBox.textContent = "⏳ Sending request...";-->
+<!--                try {-->
+<!--                const res = await fetch(apiUrl, {-->
+<!--                method: "POST",-->
+<!--                headers: {-->
+<!--                "Content-Type": "application/json"-->
+<!--                },-->
+<!--                body: JSON.stringify(payload)-->
+<!--                });-->
+<!--                // Optional: You can print the response to debug-->
+<!--                const text = await res.text();-->
+<!--                console.log("Server response:", text);-->
+<!--                responseBox.textContent = "✅ Your email has been saved.";-->
+<!--                } catch (err) {-->
+<!--                responseBox.textContent = "❌ Error: " + err.message;-->
+<!--                }-->
+<!--                });-->
+<!--            </script>-->
+<!--        </body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8"/>-->
+<!--    <title>Email List</title>-->
+<!--    &lt;!&ndash; Импортиране на CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="main_css.css">-->
+<!--</head>-->
+<!--<script src="js.js"></script>-->
+<!--<body>-->
+<!--    <h2>Register Email</h2>-->
+<!--    <label for="name">Name</label>-->
+<!--    <input id="name" type="text" placeholder="Your name">-->
+<!--    <label for="email">Email</label>-->
+<!--    <input id="email" type="email" placeholder="example@mail.com">-->
+<!--    <label for="phone">Phone</label>-->
+<!--    <input id="phone" type="text" placeholder="+359...">-->
+<!--    <button id="submit">Send</button>-->
+<!--    <div id="response"></div>-->
+
+<!--```-->
+<!--&lt;!&ndash; Включване на JS файл &ndash;&gt;-->
+<!--<script src="js.js"></script>-->
+<!--```-->
+
+<!--</body>-->
+<!--</html>-->
+<!--<!DOCTYPE html>-->
+
+<!--<html lang="en">-->
+<!--    <head>-->
+<!--        <meta charset="UTF-8">-->
+<!--        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--        <title>Email List</title>-->
+<!--        &lt;!&ndash; Импортиране на CSS &ndash;&gt;-->
+<!--        <link rel="stylesheet" href="main_css.css">-->
+<!--    </head>-->
+<!--    <script src="js.js"></script>-->
+<!--    <body>-->
+<!--        <h2>Register Email</h2>-->
+<!--        <label for="name">Name</label>-->
+<!--        <input id="name" type="text" placeholder="Your name">-->
+
+<!--        <label for="email">Email</label>-->
+<!--        <input id="email" type="email" placeholder="example@mail.com">-->
+
+<!--        <label for="phone">Phone</label>-->
+<!--        <input id="phone" type="text" placeholder="+359...">-->
+
+<!--        <button id="submit">Send</button>-->
+
+<!--        <div id="response"></div>-->
+<!--    </body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Email List</title>
+    <link rel="stylesheet" href="main_css.css">
+</head>
+<body>
+    <h2>Register Email</h2>
+    <label for="name">Name</label>
+    <input id="name" type="text" placeholder="Your name">
+
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="example@mail.com">
+
+    <label for="phone">Phone</label>
+    <input id="phone" type="text" placeholder="+359...">
+
+    <button id="submit">Send</button>
+    <div id="response"></div>
+
+    <!-- Link to external JS -->
+    <script src="main.js"></script>
+</body>
+</html>
